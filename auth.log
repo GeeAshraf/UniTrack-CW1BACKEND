@@ -1,0 +1,164 @@
+[2026-02-08T14:45:31.996Z] SERVER START | Listening on port 5000
+[2026-02-08T15:06:14.196Z] SERVER START | Listening on port 5000
+[2026-02-08T15:41:39.817Z] SERVER START | Listening on port 5000
+[2026-02-08T15:43:06.428Z] SERVER START | Listening on port 5000
+[2026-02-08T15:45:23.035Z] SERVER START | Listening on port 5000
+[2026-02-08T15:51:45.334Z] SERVER START | Listening on port 5000
+[2026-02-08T15:52:17.305Z] SERVER ERROR | ENOENT: no such file or directory, stat 'C:\Users\Ganna\Desktop\frontend\frontend.html' | IP: ::1
+[2026-02-08T15:56:08.429Z] SERVER START | Listening on port 5000
+[2026-02-08T15:56:30.333Z] SERVER ERROR | ENOENT: no such file or directory, stat 'C:\Users\Ganna\Desktop\UniTrack CW1\all.html' | IP: ::1
+[2026-02-08T15:57:39.549Z] SERVER START | Listening on port 5000
+[2026-02-08T15:57:52.866Z] SERVER ERROR | ENOENT: no such file or directory, stat 'C:\Users\Ganna\Desktop\UniTrack CW1\all.html' | IP: ::1
+[2026-02-08T15:59:30.818Z] SERVER START | Listening on port 5000
+[2026-02-08T16:08:36.162Z] SERVER START | Listening on port 5000
+[2026-02-08T16:13:07.934Z] SERVER START | Listening on port 5000
+[2026-02-08T16:19:55.864Z] SERVER START | Listening on port 5000
+[2026-02-08T17:13:39.146Z] SERVER START | Listening on port 5000
+[2026-02-08T17:14:34.909Z] SIGNUP SUCCESS | UserID: 14 | Email: gh2301237@tkg.edu.eg | Role: user | IP: ::1
+[2026-02-08T17:14:41.934Z] LOGIN SUCCESS | User: gh2301237@tkg.edu.eg | Role: user | IP: ::1
+[2026-02-08T17:42:07.687Z] SERVER START | Listening on port 5000
+[2026-02-08T17:55:11.394Z] LOGIN SUCCESS | User: gh2301237@tkg.edu.eg | Role: user | IP: ::1
+[2026-02-08T18:24:30.640Z] SIGNUP FAILED | Email: gh2301237@tkg.edu.eg | Reason: SQLITE_CONSTRAINT: UNIQUE constraint failed: User.email | IP: ::1
+[2026-02-08T18:24:34.042Z] LOGIN SUCCESS | User: gh2301237@tkg.edu.eg | Role: user | IP: ::1
+[2026-02-08T18:29:18.951Z] SERVER START | Listening on port 5000
+[2026-02-08T18:29:42.643Z] LOGIN SUCCESS | User: gh2301237@tkg.edu.eg | Role: user | IP: ::1
+[2026-02-08T18:36:31.624Z] SERVER START | Listening on port 5000
+[2026-02-09T09:44:49.637Z] SERVER START | Listening on port 5000
+[2026-02-09T09:49:01.182Z] SERVER START | Listening on port 5000
+[2026-02-09T09:49:36.856Z] SERVER START | Listening on port 5000
+[2026-02-10T00:59:14.237Z] SIGNUP SUCCESS | UserID: 76 | Email: hamza@gmail.com | IP: ::1
+[2026-02-10T00:59:18.651Z] LOGIN SUCCESS | User: hamza@gmail.com | Role: user | IP: ::1
+[2026-02-10T01:04:37.203Z] LOGIN SUCCESS | User: hamza@gmail.com | Role: user | IP: ::1
+[2026-02-10T01:04:51.272Z] LOGIN SUCCESS | User: hamza@gmail.com | Role: user | IP: ::1
+[2026-02-10T01:09:00.468Z] SIGNUP SUCCESS | UserID: 77 | Email: Van@gmail.com | IP: ::1
+[2026-02-10T01:09:06.603Z] LOGIN SUCCESS | User: Van@gmail.com | Role: user | IP: ::1
+[2026-02-10T01:15:42.056Z] LOGIN SUCCESS | User: Van@gmail.com | Role: user | IP: ::1
+[2026-02-10T01:16:29.278Z] LOGIN SUCCESS | User: Van@gmail.com | Role: user | IP: ::1
+[2026-02-10T01:19:31.999Z] LOGIN SUCCESS | User: Van@gmail.com | Role: user | IP: ::1
+[2026-02-10T01:20:12.991Z] LOGIN SUCCESS | User: Van@gmail.com | Role: user | IP: ::1
+[2026-02-10T01:20:26.072Z] LOGIN SUCCESS | User: Van@gmail.com | Role: user | IP: ::1
+[2026-02-10T01:53:24.193Z] SIGNUP SUCCESS | UserID: 78 | Email: Lia@gmail.com | IP: ::1
+[2026-02-10T01:53:28.911Z] LOGIN SUCCESS | User: Lia@gmail.com | Role: user | IP: ::1
+[2026-02-10T02:02:57.467Z] LOGIN SUCCESS | User: Lia@gmail.com | Role: user | IP: ::1
+[2026-02-10T02:04:26.081Z] LOGIN SUCCESS | User: Lia@gmail.com | Role: user | IP: ::1
+[2026-02-10T02:06:25.262Z] LOGIN SUCCESS | User: Lia@gmail.com | Role: user | IP: ::1
+[2026-02-10T02:09:16.413Z] LOGIN SUCCESS | User: Lia@gmail.com | Role: user | IP: ::1
+[2026-02-10T02:11:57.018Z] LOGIN SUCCESS | User: Lia@gmail.com | Role: user | IP: ::1
+[2026-02-10T02:15:55.081Z] LOGIN SUCCESS | User: Lia@gmail.com | Role: user | IP: ::1
+[2026-02-10T02:20:10.461Z] SERVER ERROR | CORS policy does not allow access from: http://localhost:5502 | IP: ::1
+[2026-02-10T02:20:13.197Z] SERVER ERROR | CORS policy does not allow access from: http://localhost:5502 | IP: ::1
+[2026-02-10T02:23:19.827Z] SERVER ERROR | CORS policy does not allow access from: http://localhost:5502 | IP: ::1
+[2026-02-10T02:23:22.006Z] SERVER ERROR | CORS policy does not allow access from: http://localhost:5502 | IP: ::1
+[2026-02-10T02:23:22.167Z] SERVER ERROR | CORS policy does not allow access from: http://localhost:5502 | IP: ::1
+[2026-02-10T02:23:22.335Z] SERVER ERROR | CORS policy does not allow access from: http://localhost:5502 | IP: ::1
+[2026-02-10T02:23:22.475Z] SERVER ERROR | CORS policy does not allow access from: http://localhost:5502 | IP: ::1
+[2026-02-10T02:23:42.848Z] SERVER ERROR | CORS policy does not allow access from: http://localhost:5502 | IP: ::1
+[2026-02-10T02:24:03.362Z] SERVER ERROR | CORS policy does not allow access from: http://localhost:5502 | IP: ::1
+[2026-02-10T07:42:03.805Z] SERVER START | Listening on port 5000
+[2026-02-10T07:44:23.806Z] SERVER ERROR | ENOENT: no such file or directory, stat 'C:\Users\Ganna\Desktop\UniTrack CW1\frontend\frontend.html' | IP: ::1
+[2026-02-10T08:06:52.837Z] SERVER START | Listening on port 5000
+[2026-02-10T08:14:15.759Z] SERVER START | Listening on port 5000
+[2026-02-10T08:17:47.799Z] SIGNUP SUCCESS | UserID: 82 | Email: hania@gmail.com | Role: user | IP: ::1
+[2026-02-10T08:17:52.805Z] LOGIN SUCCESS | User: hania@gmail.com | Role: user | IP: ::1
+[2026-02-10T08:59:06.087Z] LOGIN SUCCESS | User: hania@gmail.com | Role: user | IP: ::1
+[2026-02-10T09:02:47.795Z] LOGIN SUCCESS | User: hania@gmail.com | Role: user | IP: ::1
+[2026-02-10T09:03:43.625Z] SIGNUP SUCCESS | UserID: 83 | Email: osama@gmail.com | Role: user | IP: ::1
+[2026-02-10T09:04:50.049Z] LOGIN SUCCESS | User: osama@gmail.com | Role: user | IP: ::1
+[2026-02-10T09:14:11.669Z] SERVER START | Listening on port 5000
+[2026-02-10T09:50:29.807Z] SERVER START | Listening on port 5000
+[2026-02-10T10:05:42.428Z] SERVER START | Listening on port 5000
+[2026-02-10T10:42:24.797Z] SERVER START | Listening on port 5000
+[2026-02-10T10:43:07.855Z] SIGNUP SUCCESS | UserID: 88 | Email: Mohamed@gmail.com | Role: admin | IP: ::1
+[2026-02-10T10:47:17.055Z] LOGIN SUCCESS | User: Mohamed@gmail.com | Role: admin | IP: ::1
+[2026-02-10T10:47:17.180Z] AUTH FAILED | Token Verification Error: cite_start is not defined | IP: ::1
+[2026-02-10T10:48:06.924Z] LOGIN SUCCESS | User: Mohamed@gmail.com | Role: admin | IP: ::1
+[2026-02-10T10:48:06.994Z] AUTH FAILED | Token Verification Error: cite_start is not defined | IP: ::1
+[2026-02-10T10:48:26.568Z] AUTH FAILED | Token Verification Error: cite_start is not defined | IP: ::1
+[2026-02-10T10:52:43.430Z] LOGIN SUCCESS | User: Mohamed@gmail.com | Role: admin | IP: ::1
+[2026-02-10T10:54:02.135Z] LOGIN SUCCESS | User: Mohamed@gmail.com | Role: admin | IP: ::1
+[2026-02-10T10:54:33.733Z] LOGIN SUCCESS | User: Mohamed@gmail.com | Role: admin | IP: ::1
+[2026-02-10T10:56:47.920Z] LOGIN SUCCESS | User: Mohamed@gmail.com | Role: admin | IP: ::1
+[2026-02-10T12:27:03.691Z] SERVER START | Listening on port 5000
+[2026-02-10T12:30:49.482Z] SIGNUP FAILED | Email: Mohamed@gmail.com | Reason: SQLITE_CONSTRAINT: UNIQUE constraint failed: User.email | IP: ::1
+[2026-02-10T12:30:55.141Z] LOGIN SUCCESS | User: Mohamed@gmail.com | Role: admin | IP: ::1
+[2026-02-10T12:30:55.195Z] AUTH FAILED | Unexpected Error: db.get is not a function | IP: ::1
+[2026-02-10T13:54:40.094Z] LOGIN SUCCESS | User: Mohamed@gmail.com | Role: admin | IP: ::1
+[2026-02-10T13:54:40.447Z] AUTH FAILED | Unexpected Error: db.get is not a function | IP: ::1
+[2026-02-10T13:54:46.078Z] LOGIN SUCCESS | User: Mohamed@gmail.com | Role: admin | IP: ::1
+[2026-02-10T13:54:46.127Z] AUTH FAILED | Unexpected Error: db.get is not a function | IP: ::1
+[2026-02-10T14:03:57.013Z] SERVER START | Listening on port 5000
+[2026-02-10T14:04:04.834Z] LOGIN SUCCESS | User: Mohamed@gmail.com | Role: admin | IP: ::1
+[2026-02-10T14:04:06.050Z] LOGIN SUCCESS | User: Mohamed@gmail.com | Role: admin | IP: ::1
+[2026-02-10T14:04:07.049Z] LOGIN SUCCESS | User: Mohamed@gmail.com | Role: admin | IP: ::1
+[2026-02-10T14:10:31.160Z] LOGIN SUCCESS | User: Mohamed@gmail.com | Role: admin | IP: ::1
+[2026-02-10T14:10:31.233Z] LOGIN SUCCESS | User: Mohamed@gmail.com | Role: admin | IP: ::1
+[2026-02-10T14:11:30.431Z] LOGIN SUCCESS | User: Mohamed@gmail.com | Role: admin | IP: ::1
+[2026-02-10T14:11:30.566Z] LOGIN SUCCESS | User: Mohamed@gmail.com | Role: admin | IP: ::1
+[2026-02-10T14:11:36.957Z] LOGIN SUCCESS | User: Mohamed@gmail.com | Role: admin | IP: ::1
+[2026-02-10T14:11:37.090Z] LOGIN SUCCESS | User: Mohamed@gmail.com | Role: admin | IP: undefined
+[2026-02-10T14:14:39.829Z] LOGIN SUCCESS | User: Mohamed@gmail.com | Role: admin | IP: ::1
+[2026-02-10T14:22:51.194Z] LOGIN SUCCESS | User: Mohamed@gmail.com | Role: admin | IP: ::1
+[2026-02-10T14:28:17.349Z] LOGIN SUCCESS | User: Mohamed@gmail.com | Role: admin | IP: ::1
+[2026-02-10T14:28:19.206Z] LOGIN SUCCESS | User: Mohamed@gmail.com | Role: admin | IP: ::1
+[2026-02-10T14:28:20.477Z] LOGIN SUCCESS | User: Mohamed@gmail.com | Role: admin | IP: ::1
+[2026-02-10T14:29:25.090Z] SIGNUP SUCCESS | UserID: 91 | Email: marwan@gmail.com | Role: admin | IP: ::1
+[2026-02-10T14:29:30.876Z] LOGIN SUCCESS | User: marwan@gmail.com | Role: admin | IP: ::1
+[2026-02-10T14:29:32.237Z] LOGIN SUCCESS | User: marwan@gmail.com | Role: admin | IP: ::1
+[2026-02-10T14:29:33.181Z] LOGIN SUCCESS | User: marwan@gmail.com | Role: admin | IP: ::1
+[2026-02-10T14:29:34.115Z] LOGIN SUCCESS | User: marwan@gmail.com | Role: admin | IP: ::1
+[2026-02-10T14:29:34.755Z] LOGIN SUCCESS | User: marwan@gmail.com | Role: admin | IP: ::1
+[2026-02-10T14:31:40.270Z] LOGIN SUCCESS | User: marwan@gmail.com | Role: admin | IP: ::1
+[2026-02-10T14:31:48.883Z] LOGOUT | UserID: 91 | IP: ::1
+[2026-02-10T14:32:20.887Z] SIGNUP SUCCESS | UserID: 92 | Email: gee@gmail.com | Role: technician | IP: ::1
+[2026-02-10T14:32:25.774Z] LOGIN SUCCESS | User: gee@gmail.com | Role: technician | IP: ::1
+[2026-02-10T14:39:29.826Z] LOGIN SUCCESS | User: marwan@gmail.com | Role: admin | IP: ::1
+[2026-02-10T14:42:10.362Z] LOGIN SUCCESS | User: gee@gmail.com | Role: technician | IP: ::1
+[2026-02-10T14:45:59.610Z] LOGIN SUCCESS | User: marwan@gmail.com | Role: admin | IP: ::1
+[2026-02-10T14:46:07.502Z] LOGIN SUCCESS | User: gee@gmail.com | Role: technician | IP: ::1
+[2026-02-10T14:50:15.624Z] LOGIN SUCCESS | User: marwan@gmail.com | Role: admin | IP: ::1
+[2026-02-10T14:50:26.102Z] LOGIN SUCCESS | User: gee@gmail.com | Role: technician | IP: ::1
+[2026-02-10T14:55:30.068Z] LOGIN SUCCESS | User: marwan@gmail.com | Role: admin | IP: ::1
+[2026-02-10T15:11:50.122Z] AUTH FAILED | Missing Token | IP: ::1
+[2026-02-10T15:12:57.702Z] LOGIN SUCCESS | User: marwan@gmail.com | Role: admin | IP: ::1
+[2026-02-10T15:14:56.617Z] LOGIN SUCCESS | User: marwan@gmail.com | Role: admin | IP: ::1
+[2026-02-10T15:17:27.419Z] SERVER START | Listening on port 5000
+[2026-02-10T15:21:36.568Z] LOGIN SUCCESS | User: marwan@gmail.com | Role: admin | IP: ::1
+[2026-02-10T15:29:22.853Z] SERVER ERROR | Not allowed by CORS | IP: ::1
+[2026-02-10T15:30:14.954Z] SIGNUP SUCCESS | UserID: 94 | Email: sons@gmail.com | Role: admin | IP: ::1
+[2026-02-10T15:30:19.609Z] LOGIN SUCCESS | User: sons@gmail.com | Role: admin | IP: ::1
+[2026-02-10T17:29:31.139Z] SERVER START | Listening on port 5000
+[2026-02-10T17:33:32.969Z] SIGNUP SUCCESS | UserID: 96 | Email: neama@example.com | Role: technician | IP: ::1
+[2026-02-10T17:33:51.027Z] LOGIN SUCCESS | User: neama@example.com | Role: technician | IP: ::1
+[2026-02-10T17:35:32.785Z] SIGNUP SUCCESS | UserID: 97 | Email: ashraf@example.com | Role: admin | IP: ::1
+[2026-02-10T17:35:49.601Z] LOGIN SUCCESS | User: ashraf@example.com | Role: admin | IP: ::1
+[2026-02-10T17:36:48.532Z] LOGIN SUCCESS | User: neama@example.com | Role: technician | IP: ::1
+[2026-02-10T17:37:20.127Z] LOGIN SUCCESS | User: ashraf@example.com | Role: admin | IP: ::1
+[2026-02-10T17:37:36.398Z] LOGIN SUCCESS | User: neama@example.com | Role: technician | IP: ::1
+[2026-02-10T17:39:04.686Z] LOGIN SUCCESS | User: ashraf@example.com | Role: admin | IP: ::1
+[2026-02-10T17:39:53.900Z] SIGNUP SUCCESS | UserID: 98 | Email: ganusha@gmail.com | Role: user | IP: ::1
+[2026-02-10T17:40:24.124Z] SIGNUP FAILED | Email: ganusha@gmail.com | Reason: SQLITE_CONSTRAINT: UNIQUE constraint failed: User.email | IP: ::1
+[2026-02-10T17:40:37.761Z] LOGIN FAILED | Email: ganusha@gmail.com | IP: ::1
+[2026-02-10T17:41:09.391Z] SIGNUP SUCCESS | UserID: 99 | Email: momo@example.com | Role: user | IP: ::1
+[2026-02-10T17:41:37.525Z] LOGIN SUCCESS | User: momo@example.com | Role: user | IP: ::1
+[2026-02-10T17:43:34.467Z] LOGIN SUCCESS | User: ashraf@example.com | Role: admin | IP: ::1
+[2026-02-10T17:44:23.334Z] LOGIN SUCCESS | User: neama@example.com | Role: technician | IP: ::1
+[2026-02-10T17:47:46.993Z] SERVER START | Listening on port 5000
+[2026-02-10T18:26:57.291Z] SERVER START | Listening on port 5000
+[2026-02-10T19:01:23.880Z] SERVER START | Listening on port 5000
+[2026-02-10T19:02:42.397Z] SIGNUP SUCCESS | UserID: 103 | Email: Noor@gmail.com | Role: admin | IP: ::1
+[2026-02-10T19:02:50.667Z] LOGIN SUCCESS | User: Noor@gmail.com | Role: admin | IP: ::1
+[2026-02-10T19:03:40.797Z] SIGNUP SUCCESS | UserID: 104 | Email: Seif@gmail.com | Role: technician | IP: ::1
+[2026-02-10T19:03:48.047Z] LOGIN SUCCESS | User: Seif@gmail.com | Role: technician | IP: ::1
+[2026-02-10T19:04:50.619Z] LOGIN FAILED | Email: naema@example.com | IP: ::1
+[2026-02-10T19:05:09.780Z] LOGIN SUCCESS | User: gee@gmail.com | Role: technician | IP: ::1
+[2026-02-10T19:05:38.319Z] LOGIN SUCCESS | User: Noor@gmail.com | Role: admin | IP: ::1
+[2026-02-10T19:17:10.845Z] SIGNUP SUCCESS | UserID: 105 | Email: Passant@gmail.com | Role: user | IP: ::1
+[2026-02-10T19:17:16.523Z] LOGIN SUCCESS | User: Passant@gmail.com | Role: user | IP: ::1
+[2026-02-10T19:17:59.686Z] LOGOUT | UserID: 105 | IP: ::1
+[2026-02-10T19:18:00.029Z] AUTH FAILED | Missing Token | IP: ::1
+[2026-02-10T19:18:09.985Z] LOGIN SUCCESS | User: Noor@gmail.com | Role: admin | IP: ::1
+[2026-02-10T19:18:13.140Z] LOGIN SUCCESS | User: Noor@gmail.com | Role: admin | IP: ::1
+[2026-02-10T19:20:37.072Z] LOGOUT | UserID: 103 | IP: ::1
+[2026-02-10T19:20:47.145Z] LOGIN SUCCESS | User: gee@gmail.com | Role: technician | IP: ::1
+[2026-02-10T19:22:31.989Z] LOGOUT | UserID: 92 | IP: ::1
+[2026-02-10T19:22:32.343Z] AUTH FAILED | Missing Token | IP: ::1
