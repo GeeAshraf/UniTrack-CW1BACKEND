@@ -19,8 +19,7 @@ router.get('/', RetrieveAllRequests);
 router.get('/:id', RetrieveRequestById);
 router.post('/', CreateRequest);
 
-// Update route – supports assigning technician and/or updating status
-// Accepts body: { technician_id | technicianId, status }
+
 router.put('/:id', restrictTo('admin','technician'), UpdateRequestById);
 router.patch('/:id', restrictTo('admin','technician'), UpdateRequestById);
 

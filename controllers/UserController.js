@@ -1,6 +1,5 @@
 const { db } = require('../db');
 
-// Retrieve all users, with optional role filter (e.g. /users?role=technician)
 const RetrieveAllUsers = (req, res) => {
     const { role } = req.query || {};
 

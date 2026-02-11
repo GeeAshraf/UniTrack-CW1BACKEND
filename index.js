@@ -37,15 +37,12 @@ app.use(cors({
 app.use(cookieParser());
 app.use(express.json());
 
-// Health check - confirms this backend is running
 app.get('/health', (req, res) => res.json({ ok: true, message: 'UniTrack-BACKEND running' }));
 
-// API routes BEFORE static - ensures they're not shadowed
-// Main routes
+
 app.put('/requests/:id', protect, restrictTo('admin', 'technician'), UpdateRequestById);
 app.patch('/requests/:id', protect, restrictTo('admin', 'technician'), UpdateRequestById);
 
-// Also support /api/requests/:id (in case frontend uses /api prefix)
 app.put('/api/requests/:id', protect, restrictTo('admin', 'technician'), UpdateRequestById);
 app.patch('/api/requests/:id', protect, restrictTo('admin', 'technician'), UpdateRequestById);
 
@@ -57,7 +54,6 @@ app.use('/requests', RequestRouter);
 app.use('/users', UserRouter);
 app.use('/auth', AuthRouter);
 
-// Serve frontend from sibling UniTrack-CW1FRONT folder (AFTER API routes)
 const frontendPath = path.join(__dirname, '..', 'UniTrack-CW1FRONT');
 app.use(express.static(frontendPath));
 

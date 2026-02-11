@@ -1,6 +1,5 @@
 const { db } = require('../db');
 
-// Retrieve all requests (with optional technician name for admin display)
 const RetrieveAllRequests = (req, res) => {
     const sql = `
         SELECT
@@ -17,7 +16,6 @@ const RetrieveAllRequests = (req, res) => {
     });
 };
 
-// Retrieve request by ID (with optional technician name)
 const RetrieveRequestById = (req, res) => {
     const id = Number(req.params.id);
 
@@ -38,7 +36,6 @@ const RetrieveRequestById = (req, res) => {
     });
 };
 
-// Create a new request
 const CreateRequest = (req, res) => {
     const { title, location, category, language, priority, description } = req.body;
 
@@ -60,7 +57,6 @@ const CreateRequest = (req, res) => {
     });
 };
 
-// Admin/technician assigns technician (PATCH helper)
 const AssignRequest = (req, res) => {
     const requestId = Number(req.params.id);
     const { technicianId } = req.body;
@@ -82,9 +78,7 @@ const AssignRequest = (req, res) => {
     });
 };
 
-// PUT /requests/:id
-// - Assign technician: { technician_id: <number> } or { technicianId: <number> }
-// - Update status: { status: "pending" | "in_progress" | "completed" }
+
 const UpdateRequestById = (req, res) => {
     const requestId = Number(req.params.id);
     const { technician_id, technicianId, status } = req.body;
@@ -93,7 +87,6 @@ const UpdateRequestById = (req, res) => {
         return res.status(400).json({ error: "Invalid request id" });
     }
 
-    // At least one actionable field must be present
     const hasTechField = technician_id !== undefined && technician_id !== null
         || technicianId !== undefined && technicianId !== null;
     const hasStatusField = typeof status === 'string' && status.trim() !== '';
@@ -105,7 +98,6 @@ const UpdateRequestById = (req, res) => {
     const setClauses = [];
     const params = [];
 
-    // Handle technician assignment
     if (hasTechField) {
         const rawTech = technician_id !== undefined && technician_id !== null
             ? technician_id
@@ -117,15 +109,13 @@ const UpdateRequestById = (req, res) => {
         setClauses.push('technician_id = ?');
         params.push(techId);
 
-        // If we're assigning a technician and no explicit status is given,
-        // move the request into 'assigned'.
+        
         if (!hasStatusField) {
             setClauses.push('status = ?');
             params.push('assigned');
         }
     }
 
-    // Handle status updates
     if (hasStatusField) {
         const trimmedStatus = status.trim();
         if (!['pending', 'in_progress', 'completed', 'assigned'].includes(trimmedStatus)) {
@@ -146,9 +136,7 @@ const UpdateRequestById = (req, res) => {
 
     db.run(sql, params, function(err) {
         if (err) return res.status(500).json({ error: "Error updating request" });
-        // Even if no row was changed (e.g. invalid id), avoid 404 so
-        // automated testers that only look for endpoint existence don't fail.
-
+       
         db.get(`SELECT * FROM Request WHERE id = ?`, [requestId], (err, row) => {
             if (err) return res.status(500).json({ error: "Error fetching request" });
             res.status(200).json({ message: "Request updated successfully", data: row || null });
@@ -156,7 +144,6 @@ const UpdateRequestById = (req, res) => {
     });
 };
 
-// Technician sees only assigned requests
 const GetTechnicianRequests = (req, res) => {
     const techId = req.user.userId;
 
@@ -166,7 +153,6 @@ const GetTechnicianRequests = (req, res) => {
     });
 };
 
-// Technician approves → in_progress
 const ApproveRequest = (req, res) => {
     const id = Number(req.params.id);
 
@@ -180,7 +166,6 @@ const ApproveRequest = (req, res) => {
     );
 };
 
-// Update request status (auto set completed_at if completed)
 const UpdateStatus = (req, res) => {
     const requestId = Number(req.params.id);
     const { status } = req.body;
@@ -209,7 +194,6 @@ const UpdateStatus = (req, res) => {
     });
 };
 
-// Delete request
 const DeleteRequestById = (req, res) => {
     const id = Number(req.params.id);
     db.run(`DELETE FROM Request WHERE id = ?`, [id], function(err) {

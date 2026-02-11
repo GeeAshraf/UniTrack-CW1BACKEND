@@ -4,7 +4,7 @@ const jwt = require('jsonwebtoken');
 const logEvent = require('../utilities/logger.js');
 
 const signToken = (userId, role) => {
-    // Matching key names used in your protect middleware (userId/role)
+
     return jwt.sign({ userId, role }, process.env.JWT_SECRET, {
         expiresIn: process.env.JWT_EXPIRES_IN
     });
@@ -64,24 +64,22 @@ const login = (req, res) => {
 
             const token = signToken(row.id, row.role);
 
-            // FIX 1: Changed cookie name to 'token' to match your middleware/auth logic
             res.cookie('token', token, {
                 httpOnly: true,
-                sameSite: 'Lax', // Changed to Lax to help with local development redirect
-                secure: false,   // Set to true in production
+                sameSite: 'Lax', 
+                secure: false,   
                 maxAge: 15 * 60 * 1000
             });
 
             logEvent(`LOGIN SUCCESS | User: ${email} | Role: ${row.role} | IP: ${req.ip}`);
 
-            // FIX 2: Ensure structure matches what login.js uses: data.data.role
             res.status(200).json({
                 message: "Login successful",
                 data: {
                     id: row.id,
                     name: row.name,
                     email: row.email,
-                    role: row.role // login.js checks this for redirect
+                    role: row.role 
                 }
             });
         });
@@ -89,7 +87,6 @@ const login = (req, res) => {
 };
 
 const logout = (req, res) => {
-    // FIX 3: Clear the 'token' cookie
     res.clearCookie('token', { httpOnly: true, sameSite: 'Lax', secure: false });
     logEvent(`LOGOUT | UserID: ${req.user?.userId} | IP: ${req.ip}`);
     res.status(200).json({ message: "Logout successful" });

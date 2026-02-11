@@ -1,13 +1,12 @@
 const jwt = require('jsonwebtoken');
 const logEvent = require('../utilities/logger');
-const { db } = require('../db'); // same db.js you already use
+const { db } = require('../db'); 
 
 module.exports = (req, res, next) => {
     try {
         const cookies = req.cookies || {};
         let token = cookies.token;
 
-        // Fallback: Authorization header
         if (!token) {
             const authHeader = req.headers.authorization;
             if (authHeader && authHeader.startsWith('Bearer ')) {
@@ -45,7 +44,7 @@ module.exports = (req, res, next) => {
             return res.status(401).json({ error: "Invalid authentication token." });
         }
 
-        // 🔴 FIX: role is NOT in token → fetch from DB
+        
         db.get(
             `SELECT id, role FROM User WHERE id = ?`,
             [userId],

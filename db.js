@@ -10,7 +10,6 @@ const db = new sqlite3.Database('UniTrack.db', (err) => {
   }
 });
 
-// ------------------ Create Tables ------------------
 
 // Users table
 const CreateUserTable = `
@@ -41,7 +40,6 @@ CREATE TABLE IF NOT EXISTS Request (
 );
 `;
 
-// Trigger to auto-update updated_at on any update
 const UpdateRequestTrigger = `
 CREATE TRIGGER IF NOT EXISTS update_request_updated_at
 AFTER UPDATE ON Request
@@ -51,14 +49,11 @@ BEGIN
 END;
 `;
 
-// ------------------ Initialize Database ------------------
 db.serialize(() => {
-  // Create tables
   db.run(CreateUserTable);
   db.run(CreateRequestTable);
   db.run(UpdateRequestTrigger);
 
-  // Auto-insert default admin user
   const defaultPassword = bcrypt.hashSync('admin1234', 10);
   db.run(
     `INSERT OR IGNORE INTO User (name, email, password, role)
@@ -70,7 +65,6 @@ db.serialize(() => {
     }
   );
 
-  // Optional: Insert a test request if table is empty
   db.get("SELECT COUNT(*) AS count FROM Request", (err, row) => {
     if (err) console.error(err.message);
     else if (row.count === 0) {
